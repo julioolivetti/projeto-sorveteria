@@ -1,0 +1,93 @@
+/* NOSSOS SABORES */
+.nossos-sabores {
+    background-image: url('../../../public/assets/banner-sabores.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    margin-top: 80px;
+}
+
+.nossos-sabores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nossos-sabores h1 {
+    color: white;
+    font-size: 100px;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+/* CARDS */
+.secao-sorvetes h2 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.card-sabor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: #cfcece 1px 1px 15px 2px;
+    border-radius: 5px;
+}
+
+.secao-sabores {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    margin-bottom: 100px;
+}
+
+.card-sabor img {
+    height: 250px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.card-sabor h4 {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 10px;
+
+}
+
+.card-sabor p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .nossos-sabores h1 {
+      font-size: 60px;
+    }
+  
+    .card-sabor {
+      padding: 20px 40px;
+    }
+  
+    .secao-sabores {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card-sabor {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 425px){
+    .nossos-sabores h1 {
+      font-size: 35px;
+    }
+  }

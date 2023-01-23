@@ -1,0 +1,46 @@
+footer {
+    background-color: black;
+    
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    height: 300px;
+}
+
+.rodape img {
+    width: 100px;
+}
+
+.gelateria {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.card-rodape {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 150px;
+    }
+
+    .card-rodape {
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+    }
+}

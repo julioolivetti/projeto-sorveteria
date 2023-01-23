@@ -1,0 +1,102 @@
+/*SEÇÃO BANNER*/
+.secao-banner {
+    height: 90vh;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/public/assets/banner-home.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(249, 219, 121);
+
+}
+
+.titulo {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 30px;
+  }
+
+.titulo h1 {
+    font-size: 100px;
+    color: white;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+/*SEÇÃO IMG E TXT*/
+.secao-imgtxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secao-imgtxt img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+.textos {
+    width: 50%;
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.textos h2 {
+    font-size: 35px;
+    line-height: 26px;
+    text-align: center;
+}
+.textos span {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.textos p {
+    padding: 0 100px;
+    line-height: 26px;
+    margin: 40px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .titulo h1 {
+        font-size: 60px;
+    }
+
+    .secao-imgtxt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao-imgtxt img {
+        width: 100%;
+    }
+
+    .textos {
+        width: 100%;
+        padding: 100px 10px;
+        text-align: center;
+    }
+
+    .secao-nossos-eventos {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    
+}
+
+@media screen and (max-width: 425px) {
+    .titulo h1 {
+        font-size: 40px;
+    }
+
+    .textos h2 {
+        line-height: 40px;
+    }
+}
